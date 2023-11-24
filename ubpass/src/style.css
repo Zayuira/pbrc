@@ -1,0 +1,357 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+nav {
+   
+    position: sticky;
+            top: 0; /* Stick to the top of the viewport */
+            z-index: 100;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between; /* Add this line */
+    align-items: center; /* Add this line */
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+  
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    transition: 1s ease; 
+    margin: 0;
+
+}
+
+a {
+ 
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.dropdown {
+
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+ .event h2{
+    text-align: center;
+    color: #051535;
+}
+#events h1{
+    text-align: center;
+    color: #051535;
+}
+.event p{
+    margin-left: 25%;
+}
+@media screen and (min-width: 750px) {
+    #events img{
+        width: 100%;
+    }
+   #events{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+   .event{
+    background-color: #ffffff;
+    margin: 10px;
+   }
+    .values-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+     
+    }
+    
+    .value-box {
+        width: 23%;
+        padding: 20px;
+        margin: 25px;
+        background-color: #051535;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(44, 43, 43, 0.251);
+        text-align: center;
+       
+    }
+    
+#btus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.dropdown:hover .dropdown-content {
+
+    top: 0px;
+    right:20%;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+}
+
+}
+@media screen and (max-width: 750px){
+    #events img{
+        width: 100%;
+    }
+  
+   .event{
+    background-color: #ffffff;
+    margin: 10px;
+   }
+    .values-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .value-box {
+        width: 70%;
+        padding: 20px;
+        margin: 25px;
+        background-color: #051535;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(44, 43, 43, 0.251);
+        text-align: center;
+    }
+    
+     .dropdown:hover .dropdown-content {
+        margin-left: 0;
+        top: 0px;
+        right:20%;
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+    }
+    #btus {
+        float: none;
+    }
+}
+.dropdown-content a {
+    margin-left: 0;
+    transition: background-color 0.3s ease; 
+    color: rgb(97, 97, 97);
+    text-align: left;
+    padding: 14px 5vw;
+}
+
+.dropdown-content a:hover {
+    transition: ease 2s;
+    font-size: 17px;
+    color: #f1f1f1;
+}
+
+/* Add the following styles for login and links */
+#right {
+    padding: 10px;
+    margin-left: 0;
+    display: flex;
+
+}
+
+#right:hover .dropdown-content{
+    transition: 2s ease; 
+}
+
+section img{
+    margin-left: 9%;
+    
+   width: 80%;
+   height: auto;
+   padding: 10px;
+   background-color: white;
+}
+#btus{
+    background:  #f1f1f1;
+}
+ #btus h2{
+    text-align: justify;
+    margin: 0 10%;
+    color: #692727;
+}
+#btus h1{
+    color: #692727;
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.value-box img{
+    width: 60px;
+}
+.value-box p{
+    color: #f1f1f1;
+    font-size: 15px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
+#ourvalue{
+    background-image: url("/pics/mus.png");
+    
+    background-size: cover;
+    background-clip: inherit;
+}
+#ourvalue h1{
+    text-align: center;
+    padding-top: 25px;
+    color: #051535;
+}
+.values-container{
+    background-color: #f1f1f1;
+    margin: 0px 40px;
+}
+#categ a img{
+    width: 300px;
+    height: 300px;
+    opacity: 1.0;
+    display:block;
+}
+#cats{
+   
+    padding-left:5%;
+    display:inline-block;
+    
+  
+}
+#categ{
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 8px #78787893;
+    align-items: center;
+    margin: 2%;
+    float: left;
+    
+}
+
+#categ:hover img{
+    opacity: 0.3;
+   transition: ease-in-out 0.5s;
+  }
+  
+  #categ{
+    text-align: center;
+  }
+  
+  #ourvalue{
+    padding-bottom: 40px;
+    filter: blur(-1px);
+}
+#cats{
+    background:linear-gradient(#f1f1f1,rgb(201, 200, 200), #f1f1f1);
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #cd2020;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container{
+    background-color: rgb(255, 255, 255);
+  }
+#zurag img{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+.event{
+    margin: 30px;
+    box-shadow: 0 0 8px rgba(110, 110, 110, 0.417);
+}
+h1{
+    text-align: center;
+    color: #051535;
+}
+#exps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: auto;
+}
+#exps img{
+    width: 100%;
+
+}
+#exp{
+    margin: 5%;
+    background-color: white;
+}
